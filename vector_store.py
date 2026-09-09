@@ -2,13 +2,16 @@ from pathlib import Path
 import pandas as pd
 from langchain_chroma import Chroma
 from langchain_core.documents import Document
-from langchain_ollama import OllamaEmbeddings
+from langchain_aws import BedrockEmbeddings
 
 
 DATA_FILE = Path("data/realistic_restaurant_reviews.csv")
 DB_LOCATION = Path("chroma_langchain_db")
-IS_NEW_STORE = not DB_LOCATION.exists()
-embeddings = OllamaEmbeddings(model="mxbai-embed-large")
+
+embeddings = BedrockEmbeddings(
+    model_id="amazon.titan-embed-text-v2:0",
+    region_name="us-east-1",
+)
 
 vector_store = Chroma(
     collection_name="restaurant_reviews",
@@ -16,7 +19,7 @@ vector_store = Chroma(
     embedding_function=embeddings,
 )
 
-if IS_NEW_STORE:
+if vector_store._collection.count() == 0:
     reviews = pd.read_csv(DATA_FILE)
     documents = [
         Document(

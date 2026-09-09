@@ -33,3 +33,6 @@ while True:
 
     messages.append({"role": "assistant", "content": response.content})
     print(f"Model: {response.content}")
+
+    print("Retrieved context:")
+    print(context)

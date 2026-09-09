@@ -1,0 +1,107 @@
+EXPECTED MEMORY TEST RESULTS
+
+These are testing results for the four-agent comparison.
+
+--------------------
+
+STATELESS AGENT
+
+You: hi im roger
+Model: Hi Roger! 👋 How can I help you today?
+
+You: whats my name
+Model: I don’t know your name from this chat. If you tell me what you want to be called, I’ll use it.
+
+
+The stateless agent sends each message to the model by itself. It does not
+keep conversation history or save anything externally.
+
+--------------------
+
+CONVERSATION AGENT
+
+You: hi im roger
+Model: Hi Roger! 👋 How can I help you today?
+You: whats my name
+Model: Your name is Roger.
+You: quit
+
+You: whats my name
+Model: I don’t know your name from this chat. If you tell me what you want to be called, I’ll use it.
+
+
+The conversation agent keeps messages in a Python list, so it remembers
+within one session. When that list is cleared, the memory is gone.
+
+--------------------
+
+DYNAMODB MEMORY AGENT
+
+User ID: 1
+You: i like pizza
+Model: Nice! What kind of pizza do you like—pepperoni, cheese, veggie, or something else? 🍕
+
+You: i also like cats
+Model: That’s awesome—you’ve got good taste 😄🍕🐱
+
+What kind of cats do you like most (big fluffy ones, sleek cats, kittens, etc.)?
+You: what do you remember about me
+
+Model: From our chat, I remember that you said you like **pizza** and that you also like **cats**.
+You: exit
+
+User ID: 1
+You: what do you know about me
+
+Model: From our chat, I know that you like **pizza** and that you also like **cats**.
+You: also my name is roger
+
+Model: From our chat, I know you like **pizza** and you also like **cats**. Also, your name is **Roger**.
+You: exit
+
+
+User ID: 2
+You: what do you know about me
+Model: I don’t know anything about you from our conversation so far. You haven’t shared any personal details, preferences, or background with me, and I don’t have any saved memories about you.
+
+If you tell me things like your interests, goals, or what you want help with, I can use that information to tailor my responses.
+You: my name is mia, i like video games and working out and reading
+Model: Nice to meet you, Mia! 😊 Based on what you’ve shared, I know:
+
+- Your name: **Mia**
+- You like **video games**
+- You like **working out**
+- You like **reading**
+
+If you tell me what kinds of games you enjoy, what you usually read (genres/authors), or your workout goals, I can tailor suggestions or help you plan something.
+You: exit
+
+The agent saves the conversation in DynamoDB under a user ID. When a new
+session starts, it retrieves the saved records for that same user and adds them
+to the prompt.
+
+--------------------
+
+RAG AGENT
+
+You: what are the best and worst toppings at this restaurant
+
+Model: **Best toppings:** The toppings from the restaurant’s **“Experimental”** menu—e.g., the **maple-glazed brussels sprouts with pancetta and smoked gouda**—because reviewers say they “sound weird but it was incredible,” and the place “isn’t afraid to take risks.”
+**Worst toppings:** The toppings in the meal where the **toppings slide right off**—those where the **sauce-to-cheese ratio** is off, causing toppings to **fall off on the first bite** (leaving basically “dough with sauce” and a separate pile of cheese/toppings).
+Retrieved context:
+Innovative toppings Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.
+Perfect crust-to-topping ratio Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.
+Mediocre at best Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.
+Toppings slide right off The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.
+Suspiciously uniform toppings All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.
+
+The RAG agent retrieves relevant restaurant reviews from the external vector store and gives those
+reviews to the model as context. This represents external knowledge retrieval, similar to looking something up rather than remembering it personally.
+
+--------------------
+
+SUMMARY:
+Stateless: forgets immediately.
+Conversation: remembers during one session only.
+DynamoDB memory: remembers a user's conversations across sessions.
+RAG: retrieves information from an external knowledge source.

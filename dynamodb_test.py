@@ -14,7 +14,7 @@ from boto3.dynamodb.conditions import Key
 from botocore.exceptions import ClientError
 from dotenv import load_dotenv
 
-TABLE_NAME = "first-table"
+TABLE_NAME = "agent-memory"
 DEMO_ID = "dynamodb-demo-item"
 
 
