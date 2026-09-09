@@ -1,6 +1,5 @@
 from model import model
 
-
 while True:
     message = input("You: ")
 
