@@ -1,0 +1,85 @@
+Within-session recall: Tell it “My name is Roger,” then ask “What’s my name?” without restarting.
+
+Cross-session recall: Tell it “My name is Roger,” restart/clear the conversation, then ask again.
+
+Cross-user persistent recall: Tell User 1 “you are Roger” and User 2 “you are Mia,” 
+restart both, and see whether it remembers the correct person without mixing them up.
+
+External knowledge: Ask questions about restaurant reviews that were never given conversationally. 
+Only the RAG agent has access to those documents.
+
+
+(.venv) memory-agent [main ≡ +1 ~0 -0 !]py .\evaluate_memory_agents.py
+
+==============================================================================
+TESTING: Stateless
+==============================================================================
+Running within-session recall tests...
+Running cross-session recall tests...
+Running cross-user persistent recall test...
+Running external knowledge tests...
+
+==============================================================================
+TESTING: Conversation
+==============================================================================
+Running within-session recall tests...
+Running cross-session recall tests...
+Running cross-user persistent recall test...
+Running external knowledge tests...
+
+==============================================================================
+TESTING: DynamoDB Persistent Memory
+==============================================================================
+Running within-session recall tests...
+Running cross-session recall tests...
+Running cross-user persistent recall test...
+Running external knowledge tests...
+
+==============================================================================
+TESTING: RAG
+==============================================================================
+Running within-session recall tests...
+Running cross-session recall tests...
+Running cross-user persistent recall test...
+Running external knowledge tests...
+
+==============================================================================
+EVALUATION SUMMARY
+==============================================================================
+
+Stateless
+  within_session_recall: 0/5 (0.0%)
+  cross_session_recall: 0/5 (0.0%)
+  cross_user_persistent_recall: 0/2 (0.0%)
+  external_knowledge: 1/5 (20.0%)
+
+Conversation
+  within_session_recall: 5/5 (100.0%)
+  cross_session_recall: 0/5 (0.0%)
+  cross_user_persistent_recall: 0/2 (0.0%)
+  external_knowledge: 0/5 (0.0%)
+
+DynamoDB Persistent Memory
+  within_session_recall: 5/5 (100.0%)
+  cross_session_recall: 5/5 (100.0%)
+  cross_user_persistent_recall: 2/2 (100.0%)
+  external_knowledge: 1/5 (20.0%)
+
+RAG
+  within_session_recall: 5/5 (100.0%)
+  cross_session_recall: 1/5 (20.0%)
+  cross_user_persistent_recall: 0/2 (0.0%)
+  external_knowledge: 5/5 (100.0%) | retrieval accuracy: 100.0%
+
+Saved detailed results to: memory_agent_evaluation_results.json
+Saved summary table to:     memory_agent_evaluation_summary.csv
+
+Cleaning up temporary evaluation data...
+(.venv) memory-agent [main ≡ +4 ~0 -0 !]
+
+SO the results:
+
+Stateless = no memory
+Conversation = short-term/current-session memory
+DynamoDB = persistent long-term user memory
+RAG = external information retrieval

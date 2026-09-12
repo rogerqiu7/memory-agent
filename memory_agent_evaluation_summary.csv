@@ -1,0 +1,17 @@
+agent,category,passed,total,accuracy_percent,retrieval_accuracy_percent
+Stateless,within_session_recall,0,5,0.0,
+Stateless,cross_session_recall,0,5,0.0,
+Stateless,cross_user_persistent_recall,0,2,0.0,
+Stateless,external_knowledge,1,5,20.0,
+Conversation,within_session_recall,5,5,100.0,
+Conversation,cross_session_recall,0,5,0.0,
+Conversation,cross_user_persistent_recall,0,2,0.0,
+Conversation,external_knowledge,0,5,0.0,
+DynamoDB Persistent Memory,within_session_recall,5,5,100.0,
+DynamoDB Persistent Memory,cross_session_recall,5,5,100.0,
+DynamoDB Persistent Memory,cross_user_persistent_recall,2,2,100.0,
+DynamoDB Persistent Memory,external_knowledge,1,5,20.0,
+RAG,within_session_recall,5,5,100.0,
+RAG,cross_session_recall,1,5,20.0,
+RAG,cross_user_persistent_recall,0,2,0.0,
+RAG,external_knowledge,5,5,100.0,100.0

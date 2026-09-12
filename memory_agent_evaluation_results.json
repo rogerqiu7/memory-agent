@@ -1,0 +1,1232 @@
+{
+  "run_id": "f8347a58",
+  "model": "gpt-5.4-nano",
+  "results": [
+    {
+      "agent": "Stateless",
+      "category": "within_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from our chat so far. If you tell me your name, I can remember it for the rest of this conversation.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "within_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "I don\u2019t know\u2014there\u2019s nothing in our chat that tells me your favorite color. If you tell me once, I can remember it for next time.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "within_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "I don\u2019t know your cat\u2019s name from this chat. If you tell me what it is (or describe your cat), I can help with things like coming up with name ideas or writing a fun bio.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "within_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "I don\u2019t have enough context to know that. What\u2019s the name you\u2019ve given your project (or what\u2019s the topic)? If you tell me where you\u2019re working (e.g., repo name, app/project title, task description), I can help identify it.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "within_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "I don\u2019t know your favorite food yet\u2014I don\u2019t have any information about your preferences.\n\nIf you tell me what you like (or what you\u2019ve said before), I can help. What\u2019s your favorite food?",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this chat. If you tell me what you\u2019d like me to call you, I\u2019ll use it.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "I don\u2019t know\u2014your favorite color hasn\u2019t been shared with me yet. What is it?",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "I don\u2019t know your cat\u2019s name from this chat. If you tell me what you call your cat, I\u2019ll remember it here.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "I don\u2019t have enough information to know that. What\u2019s the name you\u2019ve been using for your project (or what topic is it about)?",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "I don\u2019t know your favorite food from this chat. If you tell me what it is, I can remember it for future questions.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_a",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this conversation. If you tell me your name, I\u2019ll remember it for future chats.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_b",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "mia"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this chat. If you tell me what it is, I\u2019ll remember it for this conversation.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "external_knowledge",
+      "test_id": "experimental_toppings",
+      "question": "According to the restaurant reviews, what toppings were on the experimental pizza that was described as incredible?",
+      "required_terms": [
+        [
+          "brussels",
+          "brussels sprouts"
+        ],
+        [
+          "pancetta"
+        ],
+        [
+          "gouda",
+          "smoked gouda"
+        ]
+      ],
+      "answer": "I can\u2019t determine that from your message alone\u2014I don\u2019t have the restaurant reviews (or the specific excerpt mentioning the \u201cincredible\u201d experimental pizza).\n\nIf you paste the relevant review text (or tell me the restaurant name + link/quote), I\u2019ll extract exactly which toppings were listed on that experimental pizza.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "external_knowledge",
+      "test_id": "sliding_toppings",
+      "question": "According to the restaurant reviews, what happened because the sauce-to-cheese ratio was off?",
+      "required_terms": [
+        [
+          "slid off",
+          "slide right off",
+          "toppings slid"
+        ]
+      ],
+      "answer": "The reviews say that because the sauce-to-cheese ratio was off, the dish turned out **too cheesy/overly heavy and unpleasantly unbalanced**.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "external_knowledge",
+      "test_id": "uniform_toppings",
+      "question": "According to the restaurant reviews, why were the uniformly cut vegetable toppings suspicious?",
+      "required_terms": [
+        [
+          "pre-cut",
+          "precut",
+          "food service provider"
+        ]
+      ],
+      "answer": "The restaurant reviews said the uniformly cut vegetable toppings were suspicious because they looked *too perfectly identical*\u2014as if they were pre-cut to the same size/shape in a way that didn\u2019t match fresh, handmade preparation.",
+      "passed": true,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "external_knowledge",
+      "test_id": "ratio",
+      "question": "According to the restaurant reviews, how was the crust-to-topping ratio described?",
+      "required_terms": [
+        [
+          "perfect",
+          "every bite"
+        ]
+      ],
+      "answer": "I can\u2019t answer that from your message alone\u2014there\u2019s no restaurant review text or link provided.  \n\nIf you paste the relevant review excerpt(s) (or tell me which restaurant/reviews you mean), I\u2019ll find how the crust-to-topping ratio was described (e.g., \u201ccrust-heavy,\u201d \u201cbalanced,\u201d \u201clots of toppings,\u201d etc.).",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Stateless",
+      "category": "external_knowledge",
+      "test_id": "special_trip",
+      "question": "According to the restaurant reviews, was the mediocre restaurant worth making a special trip for?",
+      "required_terms": [
+        [
+          "wouldn't",
+          "would not",
+          "not worth",
+          "no"
+        ],
+        [
+          "special trip"
+        ]
+      ],
+      "answer": "I can\u2019t determine that from your question alone because you haven\u2019t provided the restaurant review content (or a link to it).\n\nIf you paste the relevant review text (or summarize what it says about why it\u2019s \u201cmediocre\u201d), I\u2019ll tell you whether the reviews indicate it was worth a special trip.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "within_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "Your name is **Roger**.",
+      "passed": true,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "within_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "Your favorite color is **teal**.",
+      "passed": true,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "within_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "Your cat\u2019s name is **Tucker**.",
+      "passed": true,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "within_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "The project you\u2019re working on is called **Atlas**.",
+      "passed": true,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "within_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "Your favorite food is **pizza**. \ud83c\udf55",
+      "passed": true,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this chat. If you tell me what you\u2019d like me to call you, I\u2019ll use it.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "I don\u2019t know your favorite color yet. If you tell me what it is, I can remember it for you.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "I don\u2019t know your cat\u2019s name from this chat. What is it?",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "I don\u2019t have any information about the project name yet.  \n\nIf you tell me the project name (or paste the relevant text/screenshot), I can help you identify it or work with it.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "I don\u2019t know your favorite food yet. If you tell me what it is, I can remember it for next time.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_a",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this chat alone. If you tell me what you\u2019d like me to call you, I\u2019ll remember it for the conversation.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_b",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "mia"
+        ]
+      ],
+      "answer": "I don\u2019t know your name. If you tell me what you\u2019d like to be called, I\u2019ll use it.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "external_knowledge",
+      "test_id": "experimental_toppings",
+      "question": "According to the restaurant reviews, what toppings were on the experimental pizza that was described as incredible?",
+      "required_terms": [
+        [
+          "brussels",
+          "brussels sprouts"
+        ],
+        [
+          "pancetta"
+        ],
+        [
+          "gouda",
+          "smoked gouda"
+        ]
+      ],
+      "answer": "I can\u2019t determine that from your question alone\u2014I don\u2019t have the restaurant reviews you\u2019re referring to.\n\nIf you paste the relevant excerpt (or link/screenshot) mentioning the \u201cexperimental\u201d pizza described as **incredible**, I\u2019ll tell you exactly what toppings it had.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "external_knowledge",
+      "test_id": "sliding_toppings",
+      "question": "According to the restaurant reviews, what happened because the sauce-to-cheese ratio was off?",
+      "required_terms": [
+        [
+          "slid off",
+          "slide right off",
+          "toppings slid"
+        ]
+      ],
+      "answer": "I can\u2019t determine that from your question as-is\u2014there\u2019s no restaurant-review text included here for me to reference.\n\nIf you paste the relevant review excerpt (or tell me the restaurant/item name), I\u2019ll identify what happened specifically \u201cbecause the sauce-to-cheese ratio was off.\u201d",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "external_knowledge",
+      "test_id": "uniform_toppings",
+      "question": "According to the restaurant reviews, why were the uniformly cut vegetable toppings suspicious?",
+      "required_terms": [
+        [
+          "pre-cut",
+          "precut",
+          "food service provider"
+        ]
+      ],
+      "answer": "The reviews said the vegetable toppings looked *too uniformly cut*\u2014their identical size and shape made them seem suspicious, like they were mass-prepped rather than fresh.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "external_knowledge",
+      "test_id": "ratio",
+      "question": "According to the restaurant reviews, how was the crust-to-topping ratio described?",
+      "required_terms": [
+        [
+          "perfect",
+          "every bite"
+        ]
+      ],
+      "answer": "I can\u2019t answer that yet because you haven\u2019t provided the restaurant reviews (or the relevant excerpt).\n\nIf you paste the review text (or link/screenshot) that mentions the crust-to-topping ratio, I\u2019ll extract exactly how it was described.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "Conversation",
+      "category": "external_knowledge",
+      "test_id": "special_trip",
+      "question": "According to the restaurant reviews, was the mediocre restaurant worth making a special trip for?",
+      "required_terms": [
+        [
+          "wouldn't",
+          "would not",
+          "not worth",
+          "no"
+        ],
+        [
+          "special trip"
+        ]
+      ],
+      "answer": "I can\u2019t answer that as written because I don\u2019t have the actual restaurant reviews or the specific text you\u2019re referring to.\n\nIf you paste the relevant review excerpts (or summarize what the reviews said), I can determine whether they indicate the restaurant was worth making a special trip for.",
+      "passed": false,
+      "retrieved_context": "",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "within_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "Your name is Roger.",
+      "passed": true,
+      "retrieved_context": "User: My name is Roger.\nAssistant: Nice to meet you, Roger! What would you like to do today?",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "within_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "Your favorite color is **teal**.",
+      "passed": true,
+      "retrieved_context": "User: My favorite color is teal.\nAssistant: Got it\u2014your favorite color is **teal**.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "within_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "Your cat\u2019s name is **Tucker**.",
+      "passed": true,
+      "retrieved_context": "User: My cat is named Tucker.\nAssistant: Got it\u2014your cat is named Tucker.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "within_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "The project you\u2019re working on is called **Atlas**.",
+      "passed": true,
+      "retrieved_context": "User: The project I am working on is called Atlas.\nAssistant: Got it \u2014 your project is called **Atlas**.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "within_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "Your favorite food is **pizza**. \ud83c\udf55",
+      "passed": true,
+      "retrieved_context": "User: My favorite food is pizza.\nAssistant: Got it\u2014pizza is your favorite food. \ud83c\udf55",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "Your name is **Roger**.",
+      "passed": true,
+      "retrieved_context": "User: My name is Roger.\nAssistant: Nice to meet you, **Roger**! How can I help you today?",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "Your favorite color is **teal**.",
+      "passed": true,
+      "retrieved_context": "User: My favorite color is teal.\nAssistant: Got it \u2014 your favorite color is **teal**.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "Your cat\u2019s name is **Tucker**.",
+      "passed": true,
+      "retrieved_context": "User: My cat is named Tucker.\nAssistant: Got it\u2014your cat\u2019s name is Tucker.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "Your project is called **Atlas**.",
+      "passed": true,
+      "retrieved_context": "User: The project I am working on is called Atlas.\nAssistant: Got it \u2014 your project is called **Atlas**.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "Your favorite food is **pizza**. \ud83c\udf55",
+      "passed": true,
+      "retrieved_context": "User: My favorite food is pizza.\nAssistant: Got it\u2014pizza is your favorite food. \ud83c\udf55",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_a",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "Your name is **Roger**.",
+      "passed": true,
+      "retrieved_context": "User: My name is Roger.\nAssistant: Nice to meet you, Roger! What can I help you with today?",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_b",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "mia"
+        ]
+      ],
+      "answer": "Your name is **Mia**.",
+      "passed": true,
+      "retrieved_context": "User: My name is Mia.\nAssistant: Hi Mia! Nice to meet you.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "external_knowledge",
+      "test_id": "experimental_toppings",
+      "question": "According to the restaurant reviews, what toppings were on the experimental pizza that was described as incredible?",
+      "required_terms": [
+        [
+          "brussels",
+          "brussels sprouts"
+        ],
+        [
+          "pancetta"
+        ],
+        [
+          "gouda",
+          "smoked gouda"
+        ]
+      ],
+      "answer": "I don\u2019t have the restaurant review text (or any prior review data) available here, so I can\u2019t determine which toppings were on the \u201cexperimental pizza\u201d described as incredible.  \n\nIf you paste the relevant review excerpt (or share the toppings list), I\u2019ll extract the toppings for you.",
+      "passed": false,
+      "retrieved_context": "No previous memories.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "external_knowledge",
+      "test_id": "sliding_toppings",
+      "question": "According to the restaurant reviews, what happened because the sauce-to-cheese ratio was off?",
+      "required_terms": [
+        [
+          "slid off",
+          "slide right off",
+          "toppings slid"
+        ]
+      ],
+      "answer": "I can\u2019t determine what happened because the \u201csauce-to-cheese ratio was off\u201d from your question alone\u2014there aren\u2019t any restaurant review details included here.  \n\nIf you paste the relevant review text (or a link/excerpt), I can identify what the reviews say that caused (e.g., flavor being unbalanced, too much sauce/oily, bland cheese, etc.).",
+      "passed": false,
+      "retrieved_context": "No previous memories.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "external_knowledge",
+      "test_id": "uniform_toppings",
+      "question": "According to the restaurant reviews, why were the uniformly cut vegetable toppings suspicious?",
+      "required_terms": [
+        [
+          "pre-cut",
+          "precut",
+          "food service provider"
+        ]
+      ],
+      "answer": "I don\u2019t have the restaurant reviews (or any of their content) in the information provided, so I can\u2019t determine why the uniformly cut vegetable toppings were described as suspicious.\n\nIf you paste the relevant excerpt(s) from the reviews, I can summarize exactly what they said and explain the specific concern.",
+      "passed": false,
+      "retrieved_context": "No previous memories.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "external_knowledge",
+      "test_id": "ratio",
+      "question": "According to the restaurant reviews, how was the crust-to-topping ratio described?",
+      "required_terms": [
+        [
+          "perfect",
+          "every bite"
+        ]
+      ],
+      "answer": "I don\u2019t have the restaurant reviews text (or any excerpts from them), so I can\u2019t determine how the crust-to-topping ratio was described.\n\nIf you paste the relevant review lines (or tell me the restaurant/name and where to find the reviews), I can summarize exactly what they said about the crust-to-topping ratio.",
+      "passed": false,
+      "retrieved_context": "No previous memories.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "external_knowledge",
+      "test_id": "special_trip",
+      "question": "According to the restaurant reviews, was the mediocre restaurant worth making a special trip for?",
+      "required_terms": [
+        [
+          "wouldn't",
+          "would not",
+          "not worth",
+          "no"
+        ],
+        [
+          "special trip"
+        ]
+      ],
+      "answer": "I can\u2019t determine that from the information provided\u2014there are no restaurant reviews or details here to evaluate whether the \u201cmediocre\u201d restaurant was worth a special trip.\n\nIf you paste the relevant review excerpts (or tell me the restaurant name and what the reviews said), I can summarize what the reviews indicate.",
+      "passed": true,
+      "retrieved_context": "No previous memories.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "within_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "Your name is **Roger**.",
+      "passed": true,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "within_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "Your favorite color is **teal**.",
+      "passed": true,
+      "retrieved_context": "Perfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "within_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "Your cat\u2019s name is **Tucker**.",
+      "passed": true,
+      "retrieved_context": "Perfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "within_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "The name of the project you\u2019re working on is **Atlas**.",
+      "passed": true,
+      "retrieved_context": "Toppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "within_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "Your favorite food is **pizza**.",
+      "passed": true,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_session_recall",
+      "test_id": "name",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this conversation. If you tell me what you\u2019d like me to call you, I\u2019ll use it.",
+      "passed": false,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_session_recall",
+      "test_id": "color",
+      "question": "What is my favorite color?",
+      "required_terms": [
+        [
+          "teal"
+        ]
+      ],
+      "answer": "I don\u2019t know your favorite color from the information in our conversation (and there isn\u2019t anything here that indicates it). If you tell me, I\u2019ll remember it for next time.",
+      "passed": false,
+      "retrieved_context": "Perfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_session_recall",
+      "test_id": "cat",
+      "question": "What is my cat's name?",
+      "required_terms": [
+        [
+          "tucker"
+        ]
+      ],
+      "answer": "I don\u2019t know your cat\u2019s name\u2014there\u2019s nothing in the conversation history or external context that mentions it. If you tell me, I can use it going forward.",
+      "passed": false,
+      "retrieved_context": "Perfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_session_recall",
+      "test_id": "project",
+      "question": "What is the name of the project I am working on?",
+      "required_terms": [
+        [
+          "atlas"
+        ]
+      ],
+      "answer": "I don\u2019t know the name of the project you\u2019re working on from the information provided here. If you tell me a bit about it (or paste the relevant text), I can help identify the project name.",
+      "passed": false,
+      "retrieved_context": "Toppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_session_recall",
+      "test_id": "food",
+      "question": "What is my favorite food?",
+      "required_terms": [
+        [
+          "pizza"
+        ]
+      ],
+      "answer": "Based on the context you shared (especially the pizza-related reviews), your favorite food seems to be **pizza**.",
+      "passed": true,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_a",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "roger"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from this conversation.",
+      "passed": false,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_user_persistent_recall",
+      "test_id": "user_b",
+      "question": "What is my name?",
+      "required_terms": [
+        [
+          "mia"
+        ]
+      ],
+      "answer": "I don\u2019t know your name from the information provided in this chat.",
+      "passed": false,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.",
+      "retrieval_passed": null
+    },
+    {
+      "agent": "RAG",
+      "category": "external_knowledge",
+      "test_id": "experimental_toppings",
+      "question": "According to the restaurant reviews, what toppings were on the experimental pizza that was described as incredible?",
+      "required_terms": [
+        [
+          "brussels",
+          "brussels sprouts"
+        ],
+        [
+          "pancetta"
+        ],
+        [
+          "gouda",
+          "smoked gouda"
+        ]
+      ],
+      "answer": "The reviews say the \u201cincredible\u201d experimental pizza had **maple-glazed brussels sprouts, pancetta, and smoked gouda**.",
+      "passed": true,
+      "retrieved_context": "Innovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.",
+      "retrieval_passed": true
+    },
+    {
+      "agent": "RAG",
+      "category": "external_knowledge",
+      "test_id": "sliding_toppings",
+      "question": "According to the restaurant reviews, what happened because the sauce-to-cheese ratio was off?",
+      "required_terms": [
+        [
+          "slid off",
+          "slide right off",
+          "toppings slid"
+        ]
+      ],
+      "answer": "According to the reviews, because the sauce-to-cheese ratio was off, the toppings \u201cslid off with the first bite,\u201d leaving the diner essentially eating dough with sauce while the cheese and toppings piled up on the plate.",
+      "passed": true,
+      "retrieved_context": "Toppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.",
+      "retrieval_passed": true
+    },
+    {
+      "agent": "RAG",
+      "category": "external_knowledge",
+      "test_id": "uniform_toppings",
+      "question": "According to the restaurant reviews, why were the uniformly cut vegetable toppings suspicious?",
+      "required_terms": [
+        [
+          "pre-cut",
+          "precut",
+          "food service provider"
+        ]
+      ],
+      "answer": "According to the reviews, the uniformly cut vegetable toppings were suspicious because they were all the same precise shapes and sizes\u2014suggesting they were likely **pre-cut by a food service provider** rather than being **prepared fresh in-house** as the restaurant claimed.",
+      "passed": true,
+      "retrieved_context": "Suspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.",
+      "retrieval_passed": true
+    },
+    {
+      "agent": "RAG",
+      "category": "external_knowledge",
+      "test_id": "ratio",
+      "question": "According to the restaurant reviews, how was the crust-to-topping ratio described?",
+      "required_terms": [
+        [
+          "perfect",
+          "every bite"
+        ]
+      ],
+      "answer": "The reviews described the crust-to-topping ratio as **\u201cperfect\u201d**\u2014with **enough toppings to get some in every bite** without **overloading to the point that the crust gets soggy or the pizza\u2019s structure is compromised**.",
+      "passed": true,
+      "retrieved_context": "Perfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nMediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.",
+      "retrieval_passed": true
+    },
+    {
+      "agent": "RAG",
+      "category": "external_knowledge",
+      "test_id": "special_trip",
+      "question": "According to the restaurant reviews, was the mediocre restaurant worth making a special trip for?",
+      "required_terms": [
+        [
+          "wouldn't",
+          "would not",
+          "not worth",
+          "no"
+        ],
+        [
+          "special trip"
+        ]
+      ],
+      "answer": "No. The reviews describe it as \u201cmediocre at best\u201d and say it\u2019s a place to go when you\u2019re in the area, but not something you\u2019d \u201cmake a special trip for.\u201d",
+      "passed": true,
+      "retrieved_context": "Mediocre at best. Nothing terrible but nothing special either. The crust was okay, toppings were standard, and service was fine. It's the kind of place you go when you're in the area, but wouldn't make a special trip for.\n\nInnovative toppings. Their 'Experimental' menu section is amazing. Just tried one with maple-glazed brussels sprouts, pancetta, and smoked gouda - sounds weird but it was incredible. They're not afraid to take risks.\n\nSuspiciously uniform toppings. All the vegetable toppings were cut in precisely identical shapes and sizes, suggesting they came pre-cut from a food service provider rather than being prepared fresh in-house as claimed. Tasted fine but felt deceived by the marketing.\n\nPerfect crust-to-topping ratio. Some places overload toppings so the crust gets soggy, others are too sparse. This place gets it perfect - enough toppings to get some in every bite, but not so much that the structural integrity is compromised.\n\nToppings slide right off. The ratio of sauce to cheese was so off that all the toppings slid off with the first bite. Ended up eating what was essentially dough with sauce while the cheese and toppings formed a pile on my plate.",
+      "retrieval_passed": true
+    }
+  ],
+  "summary": [
+    {
+      "agent": "Stateless",
+      "category": "within_session_recall",
+      "passed": 0,
+      "total": 5,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_session_recall",
+      "passed": 0,
+      "total": 5,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Stateless",
+      "category": "cross_user_persistent_recall",
+      "passed": 0,
+      "total": 2,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Stateless",
+      "category": "external_knowledge",
+      "passed": 1,
+      "total": 5,
+      "accuracy_percent": 20.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Conversation",
+      "category": "within_session_recall",
+      "passed": 5,
+      "total": 5,
+      "accuracy_percent": 100.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_session_recall",
+      "passed": 0,
+      "total": 5,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Conversation",
+      "category": "cross_user_persistent_recall",
+      "passed": 0,
+      "total": 2,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "Conversation",
+      "category": "external_knowledge",
+      "passed": 0,
+      "total": 5,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "within_session_recall",
+      "passed": 5,
+      "total": 5,
+      "accuracy_percent": 100.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_session_recall",
+      "passed": 5,
+      "total": 5,
+      "accuracy_percent": 100.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "cross_user_persistent_recall",
+      "passed": 2,
+      "total": 2,
+      "accuracy_percent": 100.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "DynamoDB Persistent Memory",
+      "category": "external_knowledge",
+      "passed": 1,
+      "total": 5,
+      "accuracy_percent": 20.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "RAG",
+      "category": "within_session_recall",
+      "passed": 5,
+      "total": 5,
+      "accuracy_percent": 100.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_session_recall",
+      "passed": 1,
+      "total": 5,
+      "accuracy_percent": 20.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "RAG",
+      "category": "cross_user_persistent_recall",
+      "passed": 0,
+      "total": 2,
+      "accuracy_percent": 0.0,
+      "retrieval_accuracy_percent": ""
+    },
+    {
+      "agent": "RAG",
+      "category": "external_knowledge",
+      "passed": 5,
+      "total": 5,
+      "accuracy_percent": 100.0,
+      "retrieval_accuracy_percent": 100.0
+    }
+  ]
+}
